@@ -1,22 +1,18 @@
 import { Route, Routes } from "react-router-dom";
-import CreateNews from "./page/page2/more";
 import Navbar from "./component/navbar";
-
-
-
+import Home from "./pages/home";
+import CreateNews from "./pages/page2/page1";
 
 export default function App() {
   return (
-  <>
-  
-  <Routes>
-  <Route path="/"  element={<Navbar/>}/>
-  
-    <Route path="/more"  element={<CreateNews/>}/>
-  </Routes>
- 
-  
-  
-  </>
+    <>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+
+        <Route path="/more" element={<CreateNews />} />
+      </Routes>
+      
+    </>
   );
 }

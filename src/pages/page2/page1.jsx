@@ -43,13 +43,13 @@ export default function CreateNews() {
    <h1 className="">Create </h1>
         <form onSubmit={newDish} className="space-y-6">
           <div>
-            <input
+            < input
               type="text"
               placeholder="Image URL"
               value={imageUrl}
               onChange={(e) => setImageUrl(e.target.value)}
             />
-            <input
+            < input
               type="text"
               placeholder="D"
               value={title}
@@ -57,7 +57,7 @@ export default function CreateNews() {
             />
           </div>
           <div>
-            <input
+            < input
               type="text"
               placeholder="D"
               value={introduction}
@@ -65,7 +65,7 @@ export default function CreateNews() {
             />
           </div>
           <div>
-            <input
+            < input
               type="text"
               placeholder="D"
               value={price}
