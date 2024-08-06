@@ -49,6 +49,8 @@ export default function CreateNews() {
               value={imageUrl}
               onChange={(e) => setImageUrl(e.target.value)}
             />
+  <Input label="Username" />
+
             <input
               type="text"
               placeholder="D"

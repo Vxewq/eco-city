@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import CreateNews from "./page/page2/more";
 import Navbar from "./component/navbar";
+ 
 
 
 
