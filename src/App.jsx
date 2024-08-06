@@ -7,11 +7,10 @@ import Landing from "./pages/landing";
 export default function App() {
   return (
     <>
-      <Navbar />
-      <Routes>
+      <Navbar /> 
+       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/invest" element={<Home />} />
-
         <Route path="/create" element={<CreateNews />} />
       </Routes>
     </>

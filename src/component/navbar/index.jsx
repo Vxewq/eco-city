@@ -19,13 +19,13 @@ export default function Navbar() {
   const [desc, setDesc] = useState("");
   const [money, setMoney] = useState("");
 
-function addU (){
+  function addU() {
     api.post("/message", {
-        problemName: name,
-        description: desc,
-        price: money,
-      }); 
-}
+      problemName: name,
+      description: desc,
+      price: money,
+    });
+  }
 
   return (
     <div className="navbar">
@@ -78,7 +78,7 @@ function addU (){
               onClick={() => {
                 handleOpen;
                 console.log(name, money, desc);
-                addU()
+                addU();
               }}
             >
               <span>Confirm</span>
