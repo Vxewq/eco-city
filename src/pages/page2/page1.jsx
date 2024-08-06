@@ -51,14 +51,14 @@ export default function SendMessage() {
   };
 
   return (
-    <div className=" min-h-screen flex items-center justify-center inp">
+    <div className=" min-h-screen flex items-center justify-center inp t">
       <div className="max-w-md w-full space-y-8">
         <div>
           <h2 className="mt-6 text-center text-3xl font-extrabold text-white">Send me a message:</h2>
         </div>
         <form className="mt-8 space-y-6" onSubmit={handleSubmit}>
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-white">
+            <label htmlFor="name" className="block text-sm font-medium text-black">
               Your Name:
             </label>
             <input
