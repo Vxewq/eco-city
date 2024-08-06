@@ -1,0 +1,26 @@
+.home{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    .title{
+        h1{
+            font-size: 50px;
+            color: darkgreen;
+        }
+    }
+    .dons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        .card{
+            background: gray;
+            border-radius: 10px;
+            h2{
+                font-size: 30px;
+                color: antiquewhite;
+                text-align: center;
+            }
+        }
+    }
+}

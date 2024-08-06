@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api } from "../../utils/axios";
+import { Button,   Input } from "@material-tailwind/react";
 
 export default function CreateNews() {
   const [title, setTitle] = useState("");
@@ -43,15 +44,16 @@ export default function CreateNews() {
    <h1 className="">Create </h1>
         <form onSubmit={newDish} className="space-y-6">
           <div>
-            <input
+            < Input
               type="text"
               placeholder="Image URL"
               value={imageUrl}
               onChange={(e) => setImageUrl(e.target.value)}
             />
-  <Input label="Username" />
-
-            <input
+        
+          </div>
+          <div className="">
+          < Input
               type="text"
               placeholder="D"
               value={title}
@@ -59,7 +61,7 @@ export default function CreateNews() {
             />
           </div>
           <div>
-            <input
+            < Input
               type="text"
               placeholder="D"
               value={introduction}
@@ -67,19 +69,19 @@ export default function CreateNews() {
             />
           </div>
           <div>
-            <input
+            < Input
               type="text"
               placeholder="D"
               value={price}
               onChange={(e) => setPrice(e.target.value)}
             />
           </div>
-          <button
+          <Button
             type="submit"
-            className="w-full py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
+            className="w-full py-3 bg-[green] text-white rounded-lg hover:bg-blue-600 transition"
           >
             Create
-          </button>
+          </Button>
           {error && <p className="text-red-500 text-center mt-2">{error}</p>}
           {success && (
             <p className="text-green-500 text-center mt-2">{success}</p>
