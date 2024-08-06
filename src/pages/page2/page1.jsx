@@ -43,6 +43,9 @@ export default function CreateNews() {
    <h1 className="">Create </h1>
         <form onSubmit={newDish} className="space-y-6">
           <div>
+            <Input />
+          </div>
+          <div>
             < input
               type="text"
               placeholder="Image URL"
