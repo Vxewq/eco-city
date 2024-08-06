@@ -12,8 +12,8 @@ export default function App() {
         <Route path="/" element={<Landing />} />
         <Route path="/invest" element={<Home />} />
 
-        <Route path="/more" element={<CreateNews />} />
+        <Route path="/create" element={<CreateNews />} />
       </Routes>
     </>
-  );
+  )
 }
