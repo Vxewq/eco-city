@@ -39,7 +39,8 @@ export default function CreateNews() {
   return (
     <>
     
-        <h1 className="text-3xl font-bold mb-6 text-center">Create </h1>
+   <div className="flex flex-col gap-10 items-center">
+   <h1 className="">Create </h1>
         <form onSubmit={newDish} className="space-y-6">
           <div>
             <input
@@ -82,6 +83,7 @@ export default function CreateNews() {
             <p className="text-green-500 text-center mt-2">{success}</p>
           )}
         </form>
+   </div>
     </>
   );
 }
