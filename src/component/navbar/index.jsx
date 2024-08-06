@@ -1,5 +1,5 @@
 import { Button } from "@material-tailwind/react";
-
+import './style.scss'
 export default function Navbar(){
     return <div className="navbar">
         <div className="logo">logo
